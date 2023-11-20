@@ -1,0 +1,105 @@
+/* Start Variables */
+:root {
+    --blue-color: #263440;
+    --yellow-color: #FFD700;
+    --red-color: #DB3F39;
+    --white-color: white;
+}
+/* End Variables */
+/* Start Section blog */
+.blog .blog-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blog .blog-img img {
+    max-width: 100%;
+}
+
+.blog .blog-img .blog-titel {
+    position: absolute;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.blog .blog-img .blog-titel h1 {
+    font-size: 100px;
+    padding-bottom: 10px;
+}
+
+.blog .blog-img .blog-titel p {
+    font-size: 35px;
+    max-width: 55%;
+    border-top: 2px solid var(--blue-color);
+    padding-top: 10px;
+}
+
+.blog .blog-img .blog-titel p a {
+    color: var(--red-color);
+    font-size: 35px;
+    transition: 0.4s;
+}
+
+.blog .blog-img .blog-titel p a:hover {
+    color: var(--blue-color);
+}
+/* End Section blog */
+/* Start Section titel blog */
+.blog-titel .text{
+    padding: 50px;
+}
+
+.blog-titel .text .row {
+    padding: 10px;
+}
+
+.blog-titel a {
+    color: var(--red-color);
+    font-weight: 500;
+}
+/* End Section titel blog */
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .blog .blog-img img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .blog .blog-img .blog-titel h1 {
+        font-size: 70px;
+    }
+
+    /* Start Section titel blog */
+    .blog-titel .text{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small screens */
+    .blog .blog-img img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .blog .blog-img .blog-titel h1 {
+        font-size: 70px;
+    }
+
+    /* Start Section titel blog */
+    .blog-titel .text{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium screens */
+    .blog .blog-img img {
+        width: 100%;
+        height: 250px;
+    }
+}

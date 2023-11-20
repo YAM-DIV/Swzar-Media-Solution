@@ -1,0 +1,317 @@
+/* Start Variables */
+:root {
+    --blue-color: #263440;
+    --yellow-color: #FFD700;
+    --red-color: #DB3F39;
+    --white-color: white;
+}
+/* End Variables */
+
+header .nav-link {
+    color: var(--blue-color);
+}
+.social-sec {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titel-social {
+    text-align: center;
+    line-height: 50px;
+    color: var(--blue-color);
+}
+
+.titel-social h1 {
+    font-size: 50px;
+}
+
+.titel-social p {
+    font-size: 25px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    row-gap: 20px;
+}
+
+.social-media .col {
+    padding: 0px 25px;
+}
+
+.social-media .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--blue-color);
+    border-radius: 15px;
+    height: 250px;
+    max-width: 350px;
+    padding: 0px 20px;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.social-media .icon #icon {
+    font-size: 50px;
+    color: var(--blue-color);
+    padding-bottom: 20px;
+}
+
+.social-media .text-social-media .link-social-media i{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.social-media .text-social-media p {
+    padding: 0 20px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.social-media .text-social-media a {
+    background-color: var(--blue-color);
+    padding: 10px 25px;
+    border: 1px solid var(--blue-color);
+    border-radius: 30px;
+    color: white;
+    transition: 0.4s;
+}
+
+.social-media .text-social-media a:hover {
+    background-color: transparent;
+    color: var(--blue-color);
+}
+
+/* Start Section footer */
+.continer-footer {
+    max-width: 90%;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+footer {
+    max-width: 100%;
+    background-color: var(--blue-color);
+    margin-top: 20px;
+}
+
+.section-footer .sochel-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.section-footer .icon-sochel {
+    padding: 10px;
+}
+
+
+
+.section-footer .icon-sochel a {
+    padding: 6px 8px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: 28px;
+    transition: 0.4s;
+}
+
+.section-footer .icon-sochel a:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.section-footer .icon-sochel a:hover i {
+    color: var(--blue-color);
+}
+
+.section-footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 8px;
+}
+
+.section-footer .col {
+    color: var(--white-color);
+}
+
+.section-footer .col img {
+    max-width: 30%;
+    left: 100%;
+    transform: translateX(120%);
+}
+
+.section-footer .col h6 {
+    font-size: 16px;
+}
+
+.section-footer .col h1 {
+    border-bottom: 1px solid var(--white-color);
+    padding-bottom: 8px;
+}
+
+.section-footer .col ul {
+    padding-top: 8px;
+}
+
+.section-footer .col ul li {
+    list-style: none;
+}
+
+.section-footer .col a {
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.section-footer .col a:hover {
+    color: var(--yellow-color);
+}
+
+footer{
+    margin-top: 13rem;
+}
+/* End Section footer */
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .hamburger .bar {
+        background-color: var(--blue-color);
+    }
+
+    header .nav-link {
+        color: var(--white-color);
+    }
+
+    .titel-social h1 {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+
+    .titel-social p {
+        padding: 0 10px;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .social-media {
+        margin-top: 30px;
+    }
+
+    footer{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small screens */
+    .hamburger .bar {
+        background-color: var(--blue-color);
+    }
+
+    header .nav-link {
+        color: var(--white-color);
+    }
+
+    .titel-social h1 {
+        font-size: 35px;
+        padding: 0 10px;
+    }
+
+    .titel-social p {
+        padding: 0 10px;
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .social-media {
+        margin-top: 30px;
+    }
+
+    footer{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium screens */
+    .hamburger .bar {
+        background-color: var(--blue-color);
+    }
+
+    header .nav-link {
+        color: var(--white-color);
+    }
+
+    .titel-social h1 {
+        font-size: 45px;
+        padding: 0 10px;
+    }
+
+    .titel-social p {
+        padding: 0 10px;
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .social-media {
+        margin-top: 30px;
+    }
+
+    footer{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for large screens */
+    .hamburger .bar {
+        background-color: var(--blue-color);
+    }
+
+    header .nav-link {
+        color: var(--blue-color);
+    }
+
+    .titel-social h1 {
+        font-size: 55px;
+        padding: 0 10px;
+    }
+
+    .titel-social p {
+        padding: 0 10px;
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .social-media {
+        margin-top: 30px;
+    }
+
+    footer{
+        margin-top: 12rem;
+    }
+}

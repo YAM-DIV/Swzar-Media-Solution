@@ -1,0 +1,58 @@
+/* Start Variables */
+:root {
+    --blue-color: #263440;
+    --yellow-color: #FFD700;
+    --red-color: #DB3F39;
+    --white-color: white;
+}
+/* End Variables */
+
+.other-options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    padding: 0 50px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.payment h1 {
+    font-size: 20px;
+}
+
+.payment .options ul li a img {
+    transition: 0.4s;
+}
+
+.payment .options ul li a img:hover {
+    transform: scale(1.1);
+}
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .payment {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 40px;
+        padding: 0 50px;
+    }
+}

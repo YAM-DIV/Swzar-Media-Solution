@@ -1,0 +1,11 @@
+/* Start Variables */
+:root {
+    --blue-color: #263440;
+    --yellow-color: #FFD700;
+    --red-color: #DB3F39;
+    --white-color: white;
+}
+/* End Variables */
+.p-terms a {
+    color: var(--red-color);
+}

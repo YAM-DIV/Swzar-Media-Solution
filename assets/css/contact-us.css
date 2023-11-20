@@ -1,0 +1,258 @@
+/* Start Variables */
+:root {
+    --blue-color: #263440;
+    --yellow-color: #FFD700;
+    --red-color: #DB3F39;
+    --white-color: white;
+}
+/* End Variables */
+
+header .nav-link {
+    color: var(--blue-color);
+}
+
+.pig-titel-pricing p a {
+    transition: 0.4s;
+}
+
+.pig-titel-pricing p a:hover {
+    color: var(--blue-color);
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.pig-titel-pricing {
+    text-align: start;
+    max-width: 30rem;
+}
+
+.pig-titel-pricing h1 {
+    font-size: 70px;
+    color: var(--blue-color);
+}
+
+.pig-titel-pricing p {
+    font-size: 28px;
+    color: var(--blue-color);
+}
+
+.pig-titel-pricing p a {
+    color: var(--red-color);
+    font-size: 28px;
+
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 50px 0;
+    max-width: 100%;
+    padding: 0px 30px;
+    position: relative;
+    text-align: center;
+}
+
+.img-contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+}
+
+.img-contact-us img {
+    max-width: 40%;
+}
+
+.border-contact-us {
+    border: 2px solid var(--blue-color);
+    border-top-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    padding: 50px 40px;
+    background-color: var(--white-color);
+}
+
+.form {
+    max-width: 500px;
+    padding: 10px 20px;
+}
+
+#message {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--blue-color);
+    -webkit-transition: 0.5s;
+    transition: 0.1s;
+    outline: none;
+}
+
+#message:focus {
+    border: 2px solid var(--red-color);
+}
+
+input[type] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--blue-color);
+    -webkit-transition: 0.5s;
+    transition: 0.1s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 2px solid var(--red-color);
+}
+
+input[type=email]:focus {
+    border: 2px solid var(--red-color);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    margin: 6px 0px;
+}
+
+button {
+    margin-top: 20px;
+    align-items: center;
+}
+
+#btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+/* Start responsive */
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small screens */
+    .pig-titel-pricing {
+        padding-left: 20px;
+    }
+
+    .pig-titel-pricing h1 {
+        font-size: 50px;
+    }
+
+    .pig-titel-pricing p {
+        font-size: 20px;
+    }
+    .pig-titel-pricing p a {
+        font-size: 20px;
+    }
+
+    .hamburger .bar {
+        background-color: var(--blue-color);
+    }
+
+    .border-contact-us {
+        padding: 30px 10px;
+    }
+
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for small screens */
+    .hamburger .bar {
+        background-color: var(--blue-color);
+    }
+
+    .border-contact-us {
+        padding: 30px 10px;
+    }
+
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium screens */
+    .hamburger .bar {
+        background-color: var(--blue-color);
+    }
+
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for large screens */
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1441px){
+    /* CSS rules for extra large screens */
+    /* CSS rules for large screens */
+    .img-contact-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+    
+}
